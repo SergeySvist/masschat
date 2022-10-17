@@ -1,0 +1,88 @@
+﻿<Window x:Class="video_chat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:video_chat"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="1280" Height="720" Background="#191921" WindowStyle="SingleBorderWindow" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TabControl x:Name="tabs_Main" Grid.Column="1" Grid.Row="1">
+            <TabItem x:Name="tab_Login" Visibility="Collapsed">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="35"></RowDefinition>
+                        <RowDefinition Height="*"> </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="1" FontSize="20" Width="200">Enter your nickname:</TextBlock>
+                    <TextBox x:Name="txt_Nickname" Grid.Row="2" Width="200" FontSize="16"></TextBox>
+                    <Button x:Name="btn_Login" Grid.Row="3" FontSize="20" Width="75" Click="btn_Login_Click">Login</Button>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tab_Video" Visibility="Collapsed">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:Name="txt_UserInfo" Foreground="White" Background="#313137" Grid.Row="0">Chat</TextBlock>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="txt_Chat" Foreground="White" Background="#191921"></TextBlock>
+                        <TextBox x:Name="txt_Message" Grid.Row="1"></TextBox>
+                        <Button x:Name="btn_Send" Grid.Row="2" FontSize="20" Click="btn_Send_Click">Send</Button>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+        <TabControl x:Name="tabs_ChatnUsers" Grid.Column="2" Grid.Row="1"  Background="#313137" Foreground="White">
+            <TabItem x:Name="tab_UserList" Visibility="Collapsed">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <ListBox x:Name="list_Users" Background="#313137" Foreground="White"></ListBox>
+                    <Button x:Name="btn_Connect" Grid.Row="1" FontSize="20" Click="btn_Connect_Click">Connect</Button>
+                    <Button x:Name="btn_EndCall" Grid.Row="2" FontSize="20" Click="btn_EndCall_Click">End Call</Button>
+                </Grid>
+            </TabItem>
+            <!--<TabItem x:Name="tab_Chat" Visibility="Collapsed">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="txt_Chat" Foreground="White"></TextBlock>
+                    <TextBox x:Name="txt_Message" Grid.Row="1"></TextBox>
+                    <Button x:Name="btn_Send" Grid.Row="2" FontSize="20" Click="btn_Send_Click">Send</Button>
+                </Grid>
+            </TabItem>-->
+        </TabControl>
+        
+    </Grid>
+</Window>

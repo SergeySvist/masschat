@@ -1,0 +1,15 @@
+D:\с#\video_chat\name_server\bin\Debug\net6.0\name_server.exe
+D:\с#\video_chat\name_server\bin\Debug\net6.0\name_server.deps.json
+D:\с#\video_chat\name_server\bin\Debug\net6.0\name_server.runtimeconfig.json
+D:\с#\video_chat\name_server\bin\Debug\net6.0\name_server.dll
+D:\с#\video_chat\name_server\bin\Debug\net6.0\name_server.pdb
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.csproj.AssemblyReference.cache
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.GeneratedMSBuildEditorConfig.editorconfig
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.AssemblyInfoInputs.cache
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.AssemblyInfo.cs
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.csproj.CoreCompileInputs.cache
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.dll
+D:\с#\video_chat\name_server\obj\Debug\net6.0\refint\name_server.dll
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.pdb
+D:\с#\video_chat\name_server\obj\Debug\net6.0\name_server.genruntimeconfig.cache
+D:\с#\video_chat\name_server\obj\Debug\net6.0\ref\name_server.dll
