@@ -17,7 +17,7 @@ namespace name_server
 
         private List<Client> clients = new List<Client>();
 
-        internal Server(string host = "192.168.0.105", int port = 8080)
+        internal Server(string host = "127.0.0.1", int port = 8080)
         {
             this.host = host;
             this.port = port;

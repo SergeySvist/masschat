@@ -26,7 +26,6 @@ namespace video_chat
         string myid;
         string clientip;
         Client c;
-        SoundClient sc;
         public MainWindow()
         {
             InitializeComponent();
@@ -110,11 +109,12 @@ namespace video_chat
                 c.SendMessage("login");
             });
         }
+
         private void btn_Login_Click(object sender, RoutedEventArgs e)
         {
             if (txt_Nickname.Text != "")
             {
-                c = new Client(new ConnectionSettings("192.168.0.105", 8080, txt_Nickname.Text));
+                c = new Client(new ConnectionSettings("127.0.0.1", 8080, txt_Nickname.Text));
                 c.Connect();
                 mynick = txt_Nickname.Text;
                 Title = mynick;
